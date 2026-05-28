@@ -54,7 +54,7 @@ Backend management system developed using CakePHP MVC architecture with CRUD fun
 
 ### ☕ GS Restaurant Website
 
-Modern restaurant/cafe website with responsive design and interactive UI.
+Modern restaurant/cafe website with responsive design.
 
 
 ## 👨‍💻 Developer
@@ -65,7 +65,7 @@ Gaurav Sharwa
 ## 📫 Contact
 
 * GitHub: https://github.com/Sharwagaurav8
-* LinkedIn: Add your LinkedIn profile link
+* LinkedIn: https://www.linkedin.com/in/gaurav-sharwa-a575862b4/
 * Portfolio: https://sharwagaurav-portfolio.netlify.app
 
 
