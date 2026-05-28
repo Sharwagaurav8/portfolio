@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gaurav Sharwa — Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #f0f4f8; color: #1a202c; }
+
+  .print-btn {
+    position: fixed; top: 20px; right: 20px;
+    background: #2563eb; color: #fff;
+    border: none; padding: 10px 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px; font-weight: 600;
+    letter-spacing: 1px; cursor: pointer;
+    border-radius: 4px; z-index: 999;
+    transition: background .2s;
+  }
+  .print-btn:hover { background: #1d4ed8; }
+
+  .resume {
+    max-width: 820px; margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 4px 32px rgba(0,0,0,.12);
+    padding: 52px 56px;
+  }
+
+  /* HEADER */
+  .r-header { border-bottom: 2px solid #1a202c; padding-bottom: 20px; margin-bottom: 24px; }
+  .r-name { font-size: 32px; font-weight: 700; color: #0f172a; letter-spacing: -.5px; }
+  .r-role { font-size: 14px; font-weight: 500; color: #2563eb; letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; margin-bottom: 14px; }
+  .r-contact { display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 12px; color: #475569; }
+  .r-contact a { color: #2563eb; text-decoration: none; }
+  .r-contact a:hover { text-decoration: underline; }
+  .r-contact span::before { content: '• '; color: #94a3b8; }
+  .r-contact span:first-child::before { content: ''; }
+
+  /* SECTIONS */
+  .r-section { margin-bottom: 24px; }
+  .r-section-title {
+    font-size: 11px; font-weight: 700; letter-spacing: 2.5px;
+    text-transform: uppercase; color: #2563eb;
+    border-bottom: 1px solid #e2e8f0; padding-bottom: 6px;
+    margin-bottom: 14px;
+  }
+  .r-body { font-size: 13px; line-height: 1.75; color: #334155; }
+
+  /* SKILLS GRID */
+  .skills-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 32px; }
+  .skill-group-label { font-weight: 600; color: #0f172a; font-size: 12px; margin-bottom: 3px; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .skill-tag {
+    background: #f1f5f9; border: 1px solid #e2e8f0;
+    color: #334155; font-size: 11px; padding: 2px 10px;
+    border-radius: 2px;
+  }
+
+  /* EDU / EXPERIENCE ITEMS */
+  .r-item { margin-bottom: 14px; }
+  .r-item-header { display: flex; justify-content: space-between; align-items: flex-start; }
+  .r-item-title { font-weight: 600; font-size: 13px; color: #0f172a; }
+  .r-item-date { font-size: 11px; color: #64748b; white-space: nowrap; margin-left: 12px; }
+  .r-item-sub { font-size: 12px; color: #2563eb; margin-top: 2px; font-weight: 500; }
+  .r-item-desc { font-size: 12px; color: #475569; margin-top: 5px; line-height: 1.65; }
+  .r-item-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; }
+  .r-item-tag { background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8; font-size: 10px; padding: 2px 8px; }
+
+  /* PROJECTS */
+  .proj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .proj-card { border: 1px solid #e2e8f0; padding: 12px 14px; }
+  .proj-title { font-weight: 600; font-size: 12px; color: #0f172a; margin-bottom: 4px; }
+  .proj-desc { font-size: 11px; color: #475569; line-height: 1.6; margin-bottom: 6px; }
+  .proj-tech { font-size: 10px; color: #2563eb; font-weight: 500; }
+
+  /* SUMMARY */
+  .r-summary { font-size: 13px; line-height: 1.8; color: #334155; }
+
+  /* TWO-COL */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+  /* PRINT */
+  @media print {
+    body { background: #fff; }
+    .print-btn { display: none; }
+    .resume { margin: 0; box-shadow: none; padding: 32px 40px; }
+    @page { margin: 0; size: A4; }
+  }
+  @media (max-width: 600px) {
+    .resume { padding: 28px 20px; margin: 0; }
+    .skills-row, .proj-grid, .two-col { grid-template-columns: 1fr; }
+    .r-name { font-size: 24px; }
+    .print-btn { top: 10px; right: 10px; padding: 8px 16px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">&#8659; Download / Print PDF</button>
+
+<div class="resume">
+
+  <!-- HEADER -->
+  <div class="r-header">
+    <div class="r-name">Gaurav Sharwa</div>
+    <div class="r-role">Web Developer</div>
+    <div class="r-contact">
+      <span>Mundka, New Delhi — 110041</span>
+      <span>9310944396</span>
+      <span><a href="mailto:gauravsharwa8@gmail.com">gauravsharwa8@gmail.com</a></span>
+      <span><a href="https://www.linkedin.com/in/gaurav-sharwa-a575862b4/" target="_blank">LinkedIn: Gaurav Sharwa</a></span>
+      <span><a href="https://github.com/Sharwagaurav8" target="_blank">GitHub: Sharwagaurav8</a></span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="r-section">
+    <div class="r-section-title">Summary</div>
+    <div class="r-summary">
+      Motivated and detail-oriented Web Development professional with a completed Advanced Diploma in Computer Engineering (ADCE) from IICS, Nangloi. Strong knowledge of HTML, CSS, JavaScript, PHP (CakePHP), and MySQL, complemented by programming skills in Python and C. Skilled in building responsive web applications using MVC architecture. Eager to contribute to innovative IT projects and advance a career in the tech industry.
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="r-section">
+    <div class="r-section-title">Technical Skills</div>
+    <div class="skills-row">
+      <div>
+        <div class="skill-group-label">Frontend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Responsive Design</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-group-label">Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">CakePHP</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C / C++</span>
+        </div>
+      </div>
+      <div style="margin-top:8px">
+        <div class="skill-group-label">Database &amp; Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">MVC Pattern</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+      <div style="margin-top:8px">
+        <div class="skill-group-label">Office &amp; Soft Skills</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MS Excel</span>
+          <span class="skill-tag">MS Word</span>
+          <span class="skill-tag">PowerPoint</span>
+          <span class="skill-tag">Team Collaboration</span>
+          <span class="skill-tag">Problem Solving</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="r-section">
+    <div class="r-section-title">Education</div>
+
+    <div class="r-item">
+      <div class="r-item-header">
+        <div class="r-item-title">Advanced Diploma in Computer Engineering (ADCE)</div>
+        <div class="r-item-date">2023 — 2026</div>
+      </div>
+      <div class="r-item-sub">Indian Institute of Computer Science (IICS), Nangloi, New Delhi</div>
+      <div class="r-item-desc">Course completed. Final exams nearly done — certificate pending. Covered full-stack web development, MVC architecture, databases, and core programming.</div>
+      <div class="r-item-tags">
+        <span class="r-item-tag">HTML/CSS/JS</span>
+        <span class="r-item-tag">PHP / CakePHP</span>
+        <span class="r-item-tag">Python</span>
+        <span class="r-item-tag">MySQL</span>
+        <span class="r-item-tag">C / C++</span>
+        <span class="r-item-tag">MVC</span>
+      </div>
+    </div>
+
+    <div class="r-item">
+      <div class="r-item-header">
+        <div class="r-item-title">Bachelor of Arts (BA) — Pursuing</div>
+        <div class="r-item-date">2023 — Present</div>
+      </div>
+      <div class="r-item-sub">DU SOL — Delhi University School of Open Learning</div>
+    </div>
+
+    <div class="r-item">
+      <div class="r-item-header">
+        <div class="r-item-title">Intermediate (Class XII)</div>
+        <div class="r-item-date">2023</div>
+      </div>
+      <div class="r-item-sub">Govt. Boys Sr. Sec. School — CBSE Board</div>
+    </div>
+
+    <div class="r-item">
+      <div class="r-item-header">
+        <div class="r-item-title">High School (Class X)</div>
+        <div class="r-item-date">2021</div>
+      </div>
+      <div class="r-item-sub">National Institute of Open Learning (NIOS)</div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="r-section">
+    <div class="r-section-title">Projects</div>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <div class="proj-title">GS Restaurant</div>
+        <div class="proj-desc">Modern restaurant website with responsive design, menu layout, and smooth UI built with pure frontend technologies.</div>
+        <div class="proj-tech">HTML · CSS · JavaScript</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-title">FlixClone (Netflix Clone)</div>
+        <div class="proj-desc">Pixel-perfect Netflix interface clone demonstrating advanced CSS layout, flexbox, grid, and hover animations.</div>
+        <div class="proj-tech">HTML · CSS · JavaScript</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-title">Library Management System</div>
+        <div class="proj-desc">Full CRUD application using CakePHP MVC. Manages books, members, and borrowing records with MySQL.</div>
+        <div class="proj-tech">CakePHP · PHP · MySQL · MVC</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-title">Student Management System</div>
+        <div class="proj-desc">Complete student records system with registration, attendance, and grade management using CakePHP and MySQL.</div>
+        <div class="proj-tech">CakePHP · PHP · MySQL · MVC</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADDITIONAL -->
+  <div class="r-section">
+    <div class="r-section-title">Additional Information</div>
+    <div class="two-col">
+      <div>
+        <div class="skill-group-label" style="margin-bottom:6px">Languages</div>
+        <div class="r-body">English &nbsp;·&nbsp; Hindi</div>
+      </div>
+      <div>
+        <div class="skill-group-label" style="margin-bottom:6px">Certification</div>
+        <div class="r-body">Advanced Diploma in Computer Engineering (ADCE) — IICS Nangloi</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

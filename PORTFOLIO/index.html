@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<title>Gaurav Sharwa — Developer Portfolio</title>
+</head>
+<body>
+<div id="scrollBar"></div>
+<canvas id="bgCanvas"></canvas>
+<div class="bg-aurora"><div class="aurora-blob"></div><div class="aurora-blob"></div><div class="aurora-blob"></div><div class="aurora-blob"></div></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <div class="nav-logo"><span>&lt;</span>GauravSharwa<span>/&gt;</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <p class="hero-eyebrow">Open to opportunities</p>
+  <h1 class="hero-name">Gaurav<br><span class="accent-line">Sharwa.</span></h1>
+  <div class="hero-title">
+    <span class="tag">Web Developer</span>
+    <span class="tag">Python</span>
+    <span class="tag">Problem Solver</span>
+  </div>
+  <p class="hero-desc" id="typingText"></p>
+  <div class="hero-cta">
+    <a href="#projects" class="btn-primary">View My Work</a>
+    <a href="#contact" class="btn-outline">Get In Touch</a>
+    <a href="GauravSharwa_Resume.html" target="_blank" class="btn-resume">&#8595; View Resume</a>
+  </div>
+  <div class="hero-code-block">
+    <div class="code-top"><div class="code-dot r"></div><div class="code-dot y"></div><div class="code-dot g"></div></div>
+    <div><span class="line-num">1</span><span class="cm">// developer.config.js</span></div>
+    <div><span class="line-num">2</span></div>
+    <div><span class="line-num">3</span><span class="kw">const</span> <span class="fn">developer</span> = {</div>
+    <div><span class="line-num">4</span>&nbsp;&nbsp;name: <span class="str">"Gaurav Sharwa"</span>,</div>
+    <div><span class="line-num">5</span>&nbsp;&nbsp;role: <span class="str">"Web Developer"</span>,</div>
+    <div><span class="line-num">6</span>&nbsp;&nbsp;stack: <span class="str">"HTML·CSS·PHP·Python"</span>,</div>
+    <div><span class="line-num">7</span>&nbsp;&nbsp;available: <span class="kw">true</span>,</div>
+    <div><span class="line-num">8</span>}</div>
+    <div><span class="line-num">9</span></div>
+    <div><span class="line-num">10</span><span class="kw">export default</span> <span class="fn">developer</span>;</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-photo-wrap reveal">
+      <img src="/images/file_00000000d06072089ad85cc57888c3b7.png" id="profilePhoto" alt="Gaurav Sharwa" class="about-photo" style="min-height:200px;background:var(--surface2)"/>
+      <div class="about-photo-tag">Available</div>
+    </div>
+    <div>
+      <p class="section-label reveal">About Me</p>
+      <h2 class="section-title reveal">The human<br>behind the code.</h2>
+      <div class="about-text reveal">
+        <p>Hey! I'm <strong>Gaurav Sharwa</strong>, a passionate web developer currently pursuing my <strong>B.A. (Political Science Hons.)</strong> while simultaneously building strong skills in software development.</p>
+        <p>I love creating <strong>clean, functional websites</strong> and solving real-world problems through code. My journey spans HTML, CSS, JavaScript, PHP with CakePHP, Python, C++, and MySQL — always learning, always building.</p>
+        <p>Based in <strong>India</strong> — open to remote work globally. I believe every line of code is a step toward building something meaningful.</p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-card">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Languages</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Year Coding</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">&#8734;</div>
+          <div class="stat-label">Lines Written</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-inner">
+    <p class="section-label reveal">Background</p>
+    <h2 class="section-title reveal">Education &<br>learning path.</h2>
+
+    <div class="edu-card reveal">
+      <div class="edu-year">2023 — 2026 &nbsp;·&nbsp; Course Complete, Certificate Pending</div>
+      <div class="edu-degree">Advanced Diploma in Computer Engineering (ADCE)</div>
+      <div class="edu-school">Indian Institute of Computer Science (IICS), Nangloi, New Delhi</div>
+      <div class="edu-desc">Completed the Advanced Diploma in Computer Engineering at IICS Nangloi. Course is fully done — certificate on its way. Covered full-stack web development, MVC architecture, databases, and core programming through structured coursework and real hands-on projects.</div>
+      <div class="edu-tags">
+        <span class="edu-tag">HTML &amp; CSS</span>
+        <span class="edu-tag">JavaScript</span>
+        <span class="edu-tag">PHP / CakePHP</span>
+        <span class="edu-tag">Python</span>
+        <span class="edu-tag">MySQL</span>
+        <span class="edu-tag">MVC Architecture</span>
+        <span class="edu-tag">C++ / C</span>
+        <span class="edu-tag">MongoDB</span>
+      </div>
+    </div>
+
+    <div class="edu-card reveal">
+      <div class="edu-year">2023 — Present</div>
+      <div class="edu-degree">Bachelor of Arts (BA)</div>
+      <div class="edu-school">DU SOL — Delhi University School of Open Learning</div>
+      <div class="edu-desc">Pursuing a Bachelor of Arts degree through Delhi University's open learning program, developing strong analytical, research, and communication skills.</div>
+      <div class="edu-tags">
+        <span class="edu-tag">Research</span>
+        <span class="edu-tag">Critical Thinking</span>
+        <span class="edu-tag">Communication</span>
+      </div>
+    </div>
+
+    <div class="edu-card reveal">
+      <div class="edu-year">2023</div>
+      <div class="edu-degree">Intermediate (Class XII)</div>
+      <div class="edu-school">Govt. Boys Sr. Sec. School — CBSE Board</div>
+      <div class="edu-desc">Completed senior secondary education under the Central Board of Secondary Education (CBSE).</div>
+      <div class="edu-tags"><span class="edu-tag">CBSE</span></div>
+    </div>
+
+    <div class="edu-card reveal">
+      <div class="edu-year">2021</div>
+      <div class="edu-degree">High School (Class X)</div>
+      <div class="edu-school">National Institute of Open Learning (NIOS)</div>
+      <div class="edu-desc">Completed secondary education through the National Institute of Open Learning.</div>
+      <div class="edu-tags"><span class="edu-tag">NIOS</span></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <p class="section-label reveal">Technical Skills</p>
+    <h2 class="section-title reveal">My stack &<br>toolbox.</h2>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-cat-label">// Frontend</div>
+        <div class="skill-list">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Responsive Design</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-label">// Backend</div>
+        <div class="skill-list">
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">CakePHP</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">C Language</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-label">// Database &amp; Tools</div>
+        <div class="skill-list">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">MVC Pattern</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">MS Excel</span>
+          <span class="skill-tag">MS Word</span>
+          <span class="skill-tag">PowerPoint</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-label">// Proficiency</div>
+        <div style="width:100%">
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>HTML &amp; CSS</span><span class="skill-bar-pct">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>Python</span><span class="skill-bar-pct">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>PHP / CakePHP</span><span class="skill-bar-pct">70%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>MySQL / MongoDB</span><span class="skill-bar-pct">75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-top"><span>C++ / C</span><span class="skill-bar-pct">65%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-label">// Soft Skills</div>
+        <div class="skill-list">
+          <span class="skill-tag">Time Management</span>
+          <span class="skill-tag">Team Collaboration</span>
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Communication</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <p class="section-label reveal">Featured Work</p>
+    <h2 class="section-title reveal">Projects I've<br>built &amp; shipped.</h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-num">01 — Frontend</div>
+        <div class="project-title">GS Restaurant</div>
+        <div class="project-desc">A modern restaurant website with clean UI, menu layout, and responsive design. Built to demonstrate real-world frontend skills with smooth user experience.</div>
+        <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>Live Demo</a>
+          <a href="https://github.com/Sharwagaurav8/GS" class="project-link"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>Source</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">02 — Clone Project</div>
+        <div class="project-title">FlixClone</div>
+        <div class="project-desc">A pixel-perfect Netflix interface clone. Demonstrates strong CSS layout skills, flexbox/grid mastery, and attention to UI detail with hover effects and responsive grids.</div>
+        <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span></div>
+        <div class="project-links">
+          <a href="https://gaurav-flixclone.netlify.app" class="project-link"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>Live Demo</a>
+          <a href="https://github.com/Sharwagaurav8/flixclone" class="project-link"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>Source</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">03 — MVC Backend</div>
+        <div class="project-title">Library Management System</div>
+        <div class="project-desc">A full CRUD application built with CakePHP following MVC architecture. Manages books, members, and borrowing records with MySQL database integration.</div>
+        <div class="project-tech"><span class="tech-tag">CakePHP</span><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">MVC</span></div>
+        <div class="project-links">
+          <a href="https://github.com/Sharwagaurav8/cakephp-books-and-student-management-system" class="project-link"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>Source</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">04 — MVC Backend</div>
+        <div class="project-title">Student Management System</div>
+        <div class="project-desc">A complete student records management system with CakePHP. Features student registration, attendance, and grade management with full CRUD operations and MySQL backend.</div>
+        <div class="project-tech"><span class="tech-tag">CakePHP</span><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">MVC</span></div>
+        <div class="project-links">
+          <a href="https://github.com/Sharwagaurav8/cakephp-books-and-student-management-system" class="project-link"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>Source</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">05 — Portfolio</div>
+        <div class="project-title">This Portfolio</div>
+        <div class="project-desc">A fully custom dark-techy developer portfolio with animated background, aurora effects, particle system, typing animation, and multi-breakpoint responsive design.</div>
+        <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Canvas API</span></div>
+        <div class="project-links">
+          <a href="#" class="project-link"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>Live Demo</a>
+          <a href="https://github.com/Sharwagaurav8/my-portfolio" class="project-link"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>Source</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-inner">
+    <p class="section-label reveal">Milestones</p>
+    <h2 class="section-title reveal">What I've<br>accomplished.</h2>
+    <div class="achievements-grid">
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">&#127760;</div>
+        <div class="achievement-title">5 Projects Built</div>
+        <div class="achievement-desc">From restaurant websites to MVC-based management systems — all built from scratch with real technologies.</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">&#128218;</div>
+        <div class="achievement-title">MVC Architecture</div>
+        <div class="achievement-desc">Mastered CakePHP's MVC pattern — building structured, maintainable backend applications with proper separation of concerns.</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">&#127775;</div>
+        <div class="achievement-title">Multi-Language Stack</div>
+        <div class="achievement-desc">Proficient across 6+ languages: HTML, CSS, JS, PHP, Python, C++, and C — covering both frontend and backend development.</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">&#127894;</div>
+        <div class="achievement-title">Software Engineering Graduate</div>
+        <div class="achievement-desc">Completed the Advanced Diploma in Computer Engineering (ADCE) at IICS Nangloi — covering frontend, backend, databases, and core programming.</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">&#128640;</div>
+        <div class="achievement-title">Self-Taught Developer</div>
+        <div class="achievement-desc">Learned web development  while pursuing a degree — demonstrating dedication, self-discipline, and hunger to grow.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- LEARNING JOURNEY -->
+<section id="learning">
+  <div class="section-inner">
+    <p class="section-label reveal">Progress</p>
+    <h2 class="section-title reveal">My learning<br>journey.</h2>
+    <div class="learning-timeline">
+      <div class="learning-item reveal">
+        <div class="learning-period">2023 — Start</div>
+        <div class="learning-title">HTML &amp; CSS Foundations</div>
+        <div class="learning-desc">Started with the fundamentals — HTML structure, CSS styling, responsive layouts, flexbox, grid, and building my first static websites. Created the GS Restaurant and FlixClone projects.</div>
+      </div>
+      <div class="learning-item reveal">
+        <div class="learning-period">2023 — Growing</div>
+        <div class="learning-title">JavaScript &amp; Interactivity</div>
+        <div class="learning-desc">Added JavaScript to make pages interactive — DOM manipulation, event handling, animations, and dynamic content. Brought life to static HTML pages.</div>
+      </div>
+      <div class="learning-item reveal">
+        <div class="learning-period">2024 — Backend</div>
+        <div class="learning-title">PHP, CakePHP &amp; MVC</div>
+        <div class="learning-desc">Dived into server-side development with PHP and the CakePHP framework. Mastered MVC architecture, routing, models, views, and controllers. Built Library and Student Management Systems.</div>
+      </div>
+      <div class="learning-item reveal">
+        <div class="learning-period">2024 — Expanding</div>
+        <div class="learning-title">Python, C++ &amp; Databases</div>
+        <div class="learning-desc">Expanded into Python for scripting and problem solving. Strengthened logic with C and C++. Learned database design with MySQL and MongoDB for data management.</div>
+      </div>
+      <div class="learning-item reveal">
+        <div class="learning-period">2025 — Now</div>
+        <div class="learning-title">Building &amp; Growing</div>
+        <div class="learning-desc">Currently focused on improving project quality, learning modern tools, and preparing for professional opportunities. Open to internships, freelance work, and full-time roles.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-label reveal">Get In Touch</p>
+    <h2 class="section-title reveal">Let's build<br>something great.</h2>
+    <div class="contact-inner">
+      <div>
+        <div class="contact-info reveal">
+          <p>I'm open to <strong style="color:var(--text)">internships, freelance projects, and full-time opportunities</strong>. If you have a project or an idea, let's talk.</p>
+          <p>Response time: <strong style="color:var(--accent3)">under 24 hours.</strong></p>
+        </div>
+        <div class="contact-links reveal">
+          <a href="mailto:gauravsharwa8@gmail.com" class="contact-link-item">
+            <span class="contact-link-icon">&#9993;</span>gauravsharwa8@gmail.com
+          </a>
+          <a href="https://github.com/Sharwagaurav8" target="_blank" target="_blank" class="contact-link-item">
+            <span class="contact-link-icon">&#9901;</span>github.com/Sharwagaurav8
+          </a>
+          <a href="https://www.linkedin.com/in/gaurav-sharwa-a575862b4/" target="_blank" class="contact-link-item">
+            <span class="contact-link-icon">&#9671;</span>linkedin.com/in/gaurav-sharwa
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" id="from_name" class="form-input" placeholder="John Doe" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" id="from_email" class="form-input" placeholder="john@example.com" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea id="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button class="form-submit" id="sendBtn" onclick="sendEmail()">Send Message &#8594;</button>
+        <div id="formMsg" style="margin-top:14px;font-size:12px;letter-spacing:1px;display:none"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>&#169; 2026 Gaurav Sharwa &#8212; Built with passion.</div>
+  <div><a href="#hero">Back to top &#8593;</a></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
